@@ -1,0 +1,4 @@
+﻿  checkmatching.cpp
+d:\study\자료구조\datastructurestudy\stack\checkmatching.cpp(127): warning C4326: return type of 'main' should be 'int' instead of 'void'
+d:\study\자료구조\datastructurestudy\stack\checkmatching.cpp(125): warning C4715: 'checkMatching': not all control paths return a value
+  Stack.vcxproj -> D:\Study\자료구조\DataStructureStudy\Debug\Stack.exe

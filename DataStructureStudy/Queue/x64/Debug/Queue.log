@@ -1,0 +1,5 @@
+﻿  Fibo.cpp
+c:\users\administrator.jusin-20180207j\desktop\datastructurestudy\queue\fibo.cpp(4): warning C4172: 지역 변수 또는 임시의 주소를 반환하고 있습니다.
+c:\users\administrator.jusin-20180207j\desktop\datastructurestudy\queue\fibo.cpp(5): warning C4172: 지역 변수 또는 임시의 주소를 반환하고 있습니다.
+  Queue.vcxproj -> C:\Users\Administrator.JUSIN-20180207J\Desktop\DataStructureStudy\x64\Debug\Queue.exe
+  Queue.vcxproj -> C:\Users\Administrator.JUSIN-20180207J\Desktop\DataStructureStudy\x64\Debug\Queue.pdb (Partial PDB)

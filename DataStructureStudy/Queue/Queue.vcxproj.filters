@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\BankSimulation">
+      <UniqueIdentifier>{b889e07a-6d5e-4b53-913b-2a66a2a821c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BankSimulation">
+      <UniqueIdentifier>{0824281a-4129-4005-a939-888c7d61b99a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Meeting">
+      <UniqueIdentifier>{ff980d7c-a16f-406b-af1b-5220bc6f6265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Meeting">
+      <UniqueIdentifier>{7fa3e0d6-c4a1-4da8-b513-e1f93e772b22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CircularQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularDeque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Header Files\BankSimulation</Filter>
+    </ClInclude>
+    <ClInclude Include="BankSimulator.h">
+      <Filter>Header Files\BankSimulation</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerQueue.h">
+      <Filter>Header Files\BankSimulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Location2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentInfo.h">
+      <Filter>Header Files\Meeting</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetingManager.h">
+      <Filter>Header Files\Meeting</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentDeque.h">
+      <Filter>Header Files\Meeting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CircularQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircularDeque.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerQueue.cpp">
+      <Filter>Source Files\BankSimulation</Filter>
+    </ClCompile>
+    <ClCompile Include="BankSimulator.cpp">
+      <Filter>Source Files\BankSimulation</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meeting.cpp">
+      <Filter>Source Files\Meeting</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetingManager.cpp">
+      <Filter>Source Files\Meeting</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentDeque.cpp">
+      <Filter>Source Files\Meeting</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
