@@ -13,10 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Maze">
+      <UniqueIdentifier>{3e50e22a-8ac6-44f8-aded-00451560ef4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Maze.cpp">
+      <Filter>Source Files\Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="mazeMain.cpp">
+      <Filter>Source Files\Maze</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +40,12 @@
     </ClInclude>
     <ClInclude Include="LinkedQueue.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Maze.h">
+      <Filter>Source Files\Maze</Filter>
+    </ClInclude>
+    <ClInclude Include="Location2D.h">
+      <Filter>Source Files\Maze</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

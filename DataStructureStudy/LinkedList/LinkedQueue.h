@@ -5,7 +5,9 @@ public:
 		:mFront(nullptr), mRear(nullptr){
 	}
 	~LinkedQueue(){
-		while (IsEmpty()) delete Dequeue();
+		while (IsEmpty()) {
+			delete Dequeue();
+		}
 	}
 	void Enqueue(Node* node){
 		if (IsEmpty()){
@@ -35,7 +37,7 @@ public:
 	}
 	bool IsEmpty(){
 		return mFront == nullptr;
-	};
+	}
 	void Display(){
 		printf("[Queue Elements]\n");
 		for (Node* p = mFront; p != nullptr; p = p->GetLink()){
