@@ -1,5 +1,7 @@
 #pragma once
-#include "Location2D.h"
+
+class LocationNode;
+
 class Maze {
 public:
 	explicit Maze();
@@ -12,9 +14,15 @@ public:
 	void SearchExit();
 
 private:
+	bool isValidLoc(const int& r, const int& c);
+	void bfsSearch();
+	void dfsSearch();
+	
 	int mWidth;
 	int mHeight;
 	int** mMap;
-	Location2D mExitLoc;
+
+	LocationNode* mEntryLoc;
+	LocationNode* mExitLoc;
 };
 

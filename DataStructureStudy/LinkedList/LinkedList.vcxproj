@@ -139,6 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LocationNode.cpp" />
+    <ClCompile Include="LocationQueue.cpp" />
+    <ClCompile Include="LocationStack.cpp" />
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -146,9 +149,13 @@
     <ClCompile Include="mazeMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="define.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="Location2D.h" />
+    <ClInclude Include="LocationNode.h" />
+    <ClInclude Include="LocationQueue.h" />
+    <ClInclude Include="LocationStack.h" />
     <ClInclude Include="Maze.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Student.h" />

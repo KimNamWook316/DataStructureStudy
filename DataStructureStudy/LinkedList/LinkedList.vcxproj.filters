@@ -16,6 +16,12 @@
     <Filter Include="Source Files\Maze">
       <UniqueIdentifier>{3e50e22a-8ac6-44f8-aded-00451560ef4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Maze\Stack">
+      <UniqueIdentifier>{43f1ee1a-4941-43a5-b0fd-61791518272e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Maze\Queue">
+      <UniqueIdentifier>{a5244259-e1db-4203-8227-96d3fe883550}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -26,6 +32,15 @@
     </ClCompile>
     <ClCompile Include="mazeMain.cpp">
       <Filter>Source Files\Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationNode.cpp">
+      <Filter>Source Files\Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationStack.cpp">
+      <Filter>Source Files\Maze\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationQueue.cpp">
+      <Filter>Source Files\Maze\Queue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +61,18 @@
     </ClInclude>
     <ClInclude Include="Location2D.h">
       <Filter>Source Files\Maze</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationNode.h">
+      <Filter>Source Files\Maze</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationStack.h">
+      <Filter>Source Files\Maze\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationQueue.h">
+      <Filter>Source Files\Maze\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

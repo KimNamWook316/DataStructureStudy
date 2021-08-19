@@ -2,12 +2,17 @@
 #define __LOCATION2D_H__
 class Location2D {
 public:
-	explicit Location2D(const int& r = 0, const int& c = 0) { row = r; col = c; }
+	explicit Location2D(const int& r = 0, const int& c = 0) { mRow = r; mCol = c; }
 	bool IsNeighbor(const Location2D& p) {
-		return (p.row == row && (p.col == col - 1 || p.col == col + 1) ||
-			(p.col == col) && (p.row == row - 1 || p.row == row + 1));
+		return (p.mRow == mRow && (p.mCol == mCol - 1 || p.mCol == mCol + 1) ||
+			(p.mCol == mCol) && (p.mRow == mRow - 1 || p.mRow == mRow + 1));
 	}
-	bool operator == (const Location2D& p) { return row == p.row && col == p.col; }
-	int row, col;
+	bool operator == (const Location2D& p) { return mRow == p.mRow && mCol == p.mCol; }
+	
+	int GetRow() { return mRow; }
+	int GetCol() { return mCol; }
+
+protected:
+	int mRow, mCol;
 };
 #endif

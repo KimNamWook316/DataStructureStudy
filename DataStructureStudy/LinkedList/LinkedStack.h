@@ -6,7 +6,7 @@ public:
 		: mTop(nullptr){}
 	
 	~LinkedStack(){
-		while (IsEmpty()) { delete Pop(); }
+		while (!IsEmpty()) { delete Pop(); }
 	}
 
 	bool IsEmpty() {
