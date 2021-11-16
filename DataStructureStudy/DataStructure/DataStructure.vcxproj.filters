@@ -19,24 +19,42 @@
     <Filter Include="01.List\00.Node">
       <UniqueIdentifier>{610ec11b-c320-4935-b60e-c53ef28a4c0d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01.List\01.SingleList">
+      <UniqueIdentifier>{82e01844-eaf9-4cfe-8d25-81597e8d8a7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.List\02.DoubleList">
+      <UniqueIdentifier>{ff372e2e-8839-49bf-893f-36d5653dda44}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Node.cpp">
       <Filter>01.List\00.Node</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList.cpp">
-      <Filter>01.List</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleNode.cpp">
+      <Filter>01.List\00.Node</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>01.List\01.SingleList</Filter>
+    </ClCompile>
+    <ClCompile Include="DblLinkedList.cpp">
+      <Filter>01.List\02.DoubleList</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
       <Filter>01.List\00.Node</Filter>
     </ClInclude>
+    <ClInclude Include="DoubleNode.h">
+      <Filter>01.List\00.Node</Filter>
+    </ClInclude>
     <ClInclude Include="LinkedList.h">
-      <Filter>01.List</Filter>
+      <Filter>01.List\01.SingleList</Filter>
+    </ClInclude>
+    <ClInclude Include="DblLinkedList.h">
+      <Filter>01.List\02.DoubleList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
