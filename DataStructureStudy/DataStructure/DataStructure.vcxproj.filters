@@ -13,48 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="01.List">
+    <Filter Include="02. Tree">
+      <UniqueIdentifier>{f94fe456-d367-4fc4-94aa-4815aa029379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. List">
       <UniqueIdentifier>{4a860843-faa7-4c23-85cf-024f104e0428}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.List\00.Node">
+    <Filter Include="01. List\00.Node">
       <UniqueIdentifier>{610ec11b-c320-4935-b60e-c53ef28a4c0d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.List\01.SingleList">
+    <Filter Include="01. List\01.SingleList">
       <UniqueIdentifier>{82e01844-eaf9-4cfe-8d25-81597e8d8a7d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.List\02.DoubleList">
+    <Filter Include="01. List\02.DoubleList">
       <UniqueIdentifier>{ff372e2e-8839-49bf-893f-36d5653dda44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Tree\01. LinkBinaryTree">
+      <UniqueIdentifier>{f83f1d9c-6147-4213-bd5b-06bf2ab368f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Tree\01. LinkBinaryTree\01. Node">
+      <UniqueIdentifier>{5c1f6b1b-8fdd-4413-b1c7-233785a17daf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Node.cpp">
-      <Filter>01.List\00.Node</Filter>
+      <Filter>01. List\00.Node</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DoubleNode.cpp">
-      <Filter>01.List\00.Node</Filter>
+      <Filter>01. List\00.Node</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList.cpp">
-      <Filter>01.List\01.SingleList</Filter>
+      <Filter>01. List\01.SingleList</Filter>
     </ClCompile>
     <ClCompile Include="DblLinkedList.cpp">
-      <Filter>01.List\02.DoubleList</Filter>
+      <Filter>01. List\02.DoubleList</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryNode.cpp">
+      <Filter>02. Tree\01. LinkBinaryTree\01. Node</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkBinaryTree.cpp">
+      <Filter>02. Tree\01. LinkBinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
-      <Filter>01.List\00.Node</Filter>
+      <Filter>01. List\00.Node</Filter>
     </ClInclude>
     <ClInclude Include="DoubleNode.h">
-      <Filter>01.List\00.Node</Filter>
+      <Filter>01. List\00.Node</Filter>
     </ClInclude>
     <ClInclude Include="LinkedList.h">
-      <Filter>01.List\01.SingleList</Filter>
+      <Filter>01. List\01.SingleList</Filter>
     </ClInclude>
     <ClInclude Include="DblLinkedList.h">
-      <Filter>01.List\02.DoubleList</Filter>
+      <Filter>01. List\02.DoubleList</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryNode.h">
+      <Filter>02. Tree\01. LinkBinaryTree\01. Node</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkBinaryTree.h">
+      <Filter>02. Tree\01. LinkBinaryTree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

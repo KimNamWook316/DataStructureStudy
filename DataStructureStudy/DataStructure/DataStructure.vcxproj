@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="DblLinkedList.h" />
     <ClInclude Include="DoubleNode.h" />
+    <ClInclude Include="LinkBinaryTree.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryNode.cpp" />
+    <ClCompile Include="LinkBinaryTree.cpp" />
     <ClCompile Include="DblLinkedList.cpp" />
     <ClCompile Include="DoubleNode.cpp" />
     <ClCompile Include="LinkedList.cpp" />

@@ -13,6 +13,7 @@
 
 #include "LinkedList.h"
 #include "DblLinkedList.h"
+#include "LinkBinaryTree.h"
 
 int main() {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
@@ -36,21 +37,35 @@ int main() {
 	//list.Clear();
 	//list.Display();
 
-	// Double-Linked List
-	CDblLinkedList list;
-	list.Insert(0, new CDoubleNode(10));
-	list.Insert(0, new CDoubleNode(20));
-	list.Insert(1, new CDoubleNode(30));
-	list.Insert(list.GetSize(), new CDoubleNode(40));
-	list.Insert(2, new CDoubleNode(50));
-	list.Display();
-	list.Remove(2);
-	list.Remove(list.GetSize() - 1);
-	list.Remove(0);
-	list.Replace(1, new CDoubleNode(90));
-	list.Display();
-	list.Clear();
-	list.Display();
+	//// Double-Linked List
+	//CDblLinkedList list;
+	//list.Insert(0, new CDoubleNode(10));
+	//list.Insert(0, new CDoubleNode(20));
+	//list.Insert(1, new CDoubleNode(30));
+	//list.Insert(list.GetSize(), new CDoubleNode(40));
+	//list.Insert(2, new CDoubleNode(50));
+	//list.Display();
+	//list.Remove(2);
+	//list.Remove(list.GetSize() - 1);
+	//list.Remove(0);
+	//list.Replace(1, new CDoubleNode(90));
+	//list.Display();
+	//list.Clear();
+	//list.Display();
 
+	// Binary Tree
+	CLinkBinaryTree tree;
+	CBinaryNode* d = new CBinaryNode('D');
+	CBinaryNode* e = new CBinaryNode('E');
+	CBinaryNode* b = new CBinaryNode('B', d, e);
+	CBinaryNode* f = new CBinaryNode('F');
+	CBinaryNode* c = new CBinaryNode('C', f);
+	CBinaryNode* a = new CBinaryNode('A', b, c);
+	tree.SetRoot(a);
+
+	tree.PreOrder();
+	tree.InOrder();
+	tree.PostOrder();
+	tree.LevelOrder();
 	return 0;
 }
