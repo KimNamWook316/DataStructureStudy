@@ -14,6 +14,7 @@
 #include "LinkedList.h"
 #include "DblLinkedList.h"
 #include "LinkBinaryTree.h"
+#include "ThreadBinaryTree.h"
 
 int main() {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
@@ -67,5 +68,39 @@ int main() {
 	tree.InOrder();
 	tree.PostOrder();
 	tree.LevelOrder();
+
+	std::cout << "노드 개수 : " << tree.GetCount() << std::endl;
+	std::cout << "단말 개수 : " << tree.GetLeafCount() << std::endl;
+	std::cout << "트리 높이 : " << tree.GetHeight() << std::endl;
+
+	CLinkBinaryTree opTree;
+	CBinaryNode* n1 = new CBinaryNode(3);
+	CBinaryNode* n2 = new CBinaryNode(2);
+	CBinaryNode* n3 = new CBinaryNode('*', n1, n2);
+	CBinaryNode* n4 = new CBinaryNode(5);
+	CBinaryNode* n5 = new CBinaryNode(6);
+	CBinaryNode* n6 = new CBinaryNode('-', n4, n5);
+	CBinaryNode* n7 = new CBinaryNode('+', n3, n6);
+	opTree.SetRoot(n7);
+
+	std::cout << "계산 결과 : " << opTree.Caculate() << std::endl;
+
+	// 스레드 이진트리
+	CThreadBinaryTree threadTree;
+	//			G
+	//		C		F
+	//	A	  B    D   E
+	CThreadBinaryNode* tN1 = new CThreadBinaryNode('A', nullptr, nullptr, true);
+	CThreadBinaryNode* tN2 = new CThreadBinaryNode('B', nullptr, nullptr, true);
+	CThreadBinaryNode* tN3 = new CThreadBinaryNode('C', tN1, tN2, false);
+	CThreadBinaryNode* tN4 = new CThreadBinaryNode('D', nullptr, nullptr, true);
+	CThreadBinaryNode* tN5 = new CThreadBinaryNode('E', nullptr, nullptr, false);
+	CThreadBinaryNode* tN6 = new CThreadBinaryNode('F', tN4, tN5, false);
+	CThreadBinaryNode* tN7 = new CThreadBinaryNode('G', tN3, tN6, false);
+	threadTree.SetRoot(tN1);
+	tN1->SetRight(tN3);
+	tN2->SetRight(tN7);
+	tN4->SetRight(tN6);
+	threadTree.ThreadInorder();
 	return 0;
 }
