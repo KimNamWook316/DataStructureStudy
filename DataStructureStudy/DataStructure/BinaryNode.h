@@ -23,6 +23,8 @@ public:
 	void InOrder();
 	void PostOrder();
 
+	CBinaryNode* Search(const int key);
+
 protected:
 	int mData;
 	CBinaryNode* mpLeft;

@@ -37,6 +37,9 @@
     <Filter Include="02. Tree\02. ThreadBinaryTree">
       <UniqueIdentifier>{b496c373-f60d-4ff9-be94-3cb14fdcc2a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02. Tree\03, BinarySearchTree">
+      <UniqueIdentifier>{ba660551-876e-4f69-a8c2-5c47a747dd72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Node.cpp">
@@ -66,6 +69,9 @@
     <ClCompile Include="ThreadBinaryTree.cpp">
       <Filter>02. Tree\02. ThreadBinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="BinSrchTree.cpp">
+      <Filter>02. Tree\03, BinarySearchTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -91,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="ThreadBinaryTree.h">
       <Filter>02. Tree\02. ThreadBinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="BinSrchTree.h">
+      <Filter>02. Tree\03, BinarySearchTree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

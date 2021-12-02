@@ -31,7 +31,7 @@ protected:
 	int getHeight(class CBinaryNode* node);
 	int calculate(class CBinaryNode* node);
 
-private:
+protected:
 	class CBinaryNode* mpRoot;
 };
 

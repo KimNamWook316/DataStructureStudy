@@ -89,3 +89,23 @@ void CBinaryNode::PostOrder()
 	}
 	Print();
 }
+
+CBinaryNode* CBinaryNode::Search(const int key)
+{
+	if (key == mData)
+	{
+		return this;
+	}
+	else if (key < mData && mpLeft)
+	{
+		mpLeft->Search(key);
+	}
+	else if (key > mData && mpRight)
+	{
+		mpRight->Search(key);
+	}
+	else
+	{
+		return nullptr;
+	}
+}
