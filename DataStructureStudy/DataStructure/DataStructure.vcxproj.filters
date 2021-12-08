@@ -40,6 +40,18 @@
     <Filter Include="02. Tree\03, BinarySearchTree">
       <UniqueIdentifier>{ba660551-876e-4f69-a8c2-5c47a747dd72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03. Priority Queue">
+      <UniqueIdentifier>{31ed05fa-d6e9-4d6a-b8d2-3db9fa29d632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Priority Queue\01. Heap">
+      <UniqueIdentifier>{41e330e6-3863-4042-a0b6-8c1f222507a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Graph">
+      <UniqueIdentifier>{207d00cb-5496-4961-b0ac-2c68d8dac9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Graph\01. AdjMatrixGraph">
+      <UniqueIdentifier>{7b302321-725f-4f69-872c-453f022fa1e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Node.cpp">
@@ -72,6 +84,18 @@
     <ClCompile Include="BinSrchTree.cpp">
       <Filter>02. Tree\03, BinarySearchTree</Filter>
     </ClCompile>
+    <ClCompile Include="HeapNode.cpp">
+      <Filter>03. Priority Queue\01. Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxHeap.cpp">
+      <Filter>03. Priority Queue\01. Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHeap.cpp">
+      <Filter>03. Priority Queue\01. Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="AdjMatGraph.cpp">
+      <Filter>04. Graph\01. AdjMatrixGraph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -100,6 +124,18 @@
     </ClInclude>
     <ClInclude Include="BinSrchTree.h">
       <Filter>02. Tree\03, BinarySearchTree</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapNode.h">
+      <Filter>03. Priority Queue\01. Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxHeap.h">
+      <Filter>03. Priority Queue\01. Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHeap.h">
+      <Filter>03. Priority Queue\01. Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="AdjMatGraph.h">
+      <Filter>04. Graph\01. AdjMatrixGraph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

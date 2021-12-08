@@ -15,7 +15,6 @@ public:
 
 	void InsertRecursive(CBinaryNode* pRoot, CBinaryNode* pNode);
 	void Insert(CBinaryNode* pNode);
-	void Insert(CBinaryNode* pL, CBinaryNode* pR);
 
 	void Remove(const int data);
 	void Remove(CBinaryNode* pParent, CBinaryNode* pNode);

@@ -31,7 +31,18 @@ CBinaryNode* CBinSrchTree::SearchRecursive(CBinaryNode* pNode, const int key)
 
 CBinaryNode* CBinSrchTree::Search(const int key)
 {
-	return nullptr;
+	CBinaryNode* result = SearchRecursive(mpRoot, key);
+
+	if (result != nullptr)
+	{
+		std::cout << "탐색 성공 : " << result->GetData() 
+			<< " address : " << result << std::endl;
+	}
+	else
+	{
+		std::cout << "탐색 실패" << std::endl;
+	}
+	return result;
 }
 
 // Iteration Search
@@ -87,14 +98,42 @@ void CBinSrchTree::InsertRecursive(CBinaryNode* pRoot, CBinaryNode* pNode)
 
 void CBinSrchTree::Insert(CBinaryNode* pNode)
 {
-}
-
-void CBinSrchTree::Insert(CBinaryNode* pL, CBinaryNode* pR)
-{
+	if (pNode == nullptr)
+	{
+		return;
+	}
+	if (IsEmpty())
+	{
+		mpRoot = pNode;
+	}
+	else
+	{
+		InsertRecursive(mpRoot, pNode);
+	}
 }
 
 void CBinSrchTree::Remove(const int data)
 {
+	if (IsEmpty())
+	{
+		return;
+	}
+
+	CBinaryNode* parent = nullptr;
+	CBinaryNode* target = mpRoot;
+
+	while (target != nullptr && target->GetData() != data)
+	{
+		parent = target;
+		target = (data < target->GetData()) ? target->GetLeft() : target->GetRight();
+	}
+
+	if (target == nullptr)
+	{
+		std::cout << "키가 트리에 없음" << std::endl;
+	}
+
+	else Remove(parent, target);
 }
 
 void CBinSrchTree::Remove(CBinaryNode* pParent, CBinaryNode* pNode)
@@ -125,6 +164,7 @@ void CBinSrchTree::Remove(CBinaryNode* pParent, CBinaryNode* pNode)
 	// 지울 노드에 왼쪽이나 오른쪽 둘  하나에만 자식이 있을 경우
 	else if (pNode->GetLeft() == nullptr || pNode->GetRight() == nullptr)
 	{
+		// 지울 노드의 자식을 가져온다.
 		CBinaryNode* child = (pNode->GetLeft() != nullptr) ? pNode->GetLeft() : pNode->GetRight();
 
 		// 지울 노드가 루트 노드인 경우

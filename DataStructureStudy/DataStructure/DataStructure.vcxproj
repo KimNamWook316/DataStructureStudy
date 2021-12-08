@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdjMatGraph.h" />
     <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="BinSrchTree.h" />
     <ClInclude Include="DblLinkedList.h" />
     <ClInclude Include="DoubleNode.h" />
+    <ClInclude Include="HeapNode.h" />
     <ClInclude Include="LinkBinaryTree.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="MaxHeap.h" />
+    <ClInclude Include="MinHeap.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="ThreadBinaryNode.h" />
     <ClInclude Include="ThreadBinaryTree.h" />
@@ -32,11 +36,15 @@
   <ItemGroup>
     <ClCompile Include="BinaryNode.cpp" />
     <ClCompile Include="BinSrchTree.cpp" />
+    <ClCompile Include="AdjMatGraph.cpp" />
+    <ClCompile Include="MaxHeap.cpp" />
+    <ClCompile Include="HeapNode.cpp" />
     <ClCompile Include="LinkBinaryTree.cpp" />
     <ClCompile Include="DblLinkedList.cpp" />
     <ClCompile Include="DoubleNode.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MinHeap.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="ThreadBinaryNode.cpp" />
     <ClCompile Include="ThreadBinaryTree.cpp" />

@@ -1,1 +1,5 @@
-﻿  Queue.vcxproj -> D:\Study\자료구조\DataStructureStudy\Debug\Queue.exe
+﻿  StudentDeque.cpp
+C:\Users\namoo\Desktop\Study\DataStructureStudy\DataStructureStudy\Queue\StudentDeque.cpp(30): error C4716: 'StudentDeque::DeleteFront': must return a value
+C:\Users\namoo\Desktop\Study\DataStructureStudy\DataStructureStudy\Queue\StudentDeque.cpp(35): error C4716: 'StudentDeque::DeleteRear': must return a value
+C:\Users\namoo\Desktop\Study\DataStructureStudy\DataStructureStudy\Queue\StudentDeque.cpp(45): error C4716: 'StudentDeque::GetRear': must return a value
+C:\Users\namoo\Desktop\Study\DataStructureStudy\DataStructureStudy\Queue\StudentDeque.cpp(40): error C4716: 'StudentDeque::GetFront': must return a value
