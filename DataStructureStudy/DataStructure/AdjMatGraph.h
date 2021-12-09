@@ -22,6 +22,7 @@ public:
 
 	void Display();
 
+	bool LoadFromFile(const char* fileName);
 public:
 	char GetVertex(int i);
 	int GetEdge(int i, int j);

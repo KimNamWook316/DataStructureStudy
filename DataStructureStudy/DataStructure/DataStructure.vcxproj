@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdjListGraph.h" />
     <ClInclude Include="AdjMatGraph.h" />
     <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="BinSrchTree.h" />
     <ClInclude Include="DblLinkedList.h" />
     <ClInclude Include="DoubleNode.h" />
+    <ClInclude Include="GraphNode.h" />
     <ClInclude Include="HeapNode.h" />
     <ClInclude Include="LinkBinaryTree.h" />
     <ClInclude Include="LinkedList.h" />
@@ -37,6 +39,8 @@
     <ClCompile Include="BinaryNode.cpp" />
     <ClCompile Include="BinSrchTree.cpp" />
     <ClCompile Include="AdjMatGraph.cpp" />
+    <ClCompile Include="AdjListGraph.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
     <ClCompile Include="MaxHeap.cpp" />
     <ClCompile Include="HeapNode.cpp" />
     <ClCompile Include="LinkBinaryTree.cpp" />

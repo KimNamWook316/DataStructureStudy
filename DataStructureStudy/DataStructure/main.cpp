@@ -17,6 +17,7 @@
 #include "ThreadBinaryTree.h"
 #include "MaxHeap.h"
 #include "AdjMatGraph.h"
+#include "AdjListGraph.h"
 
 void heapSort(int a[], int n);
 
@@ -165,5 +166,26 @@ int main() {
 	std::cout << "Adj Matrix Graph : " << std::endl;
 	graph.Display();
 	
+	graph.Reset();
+	
+	std::cout << "Load From File : " << std::endl;
+	graph.LoadFromFile("graph.txt");
+	graph.Display();
+
+
+	// List Graph
+	CAdjListGraph listGraph;
+
+	for (int i = 0; i < 4; ++i)
+	{
+		listGraph.InsertVertex('A' + i);
+	}
+
+	listGraph.InsertEdge(0, 1);
+	listGraph.InsertEdge(0, 3);
+	listGraph.InsertEdge(1, 2);
+	listGraph.InsertEdge(1, 3);
+	listGraph.InsertEdge(2, 3);
+	listGraph.Display();
 	return 0;
 }

@@ -25,9 +25,6 @@
     <Filter Include="01. List\01.SingleList">
       <UniqueIdentifier>{82e01844-eaf9-4cfe-8d25-81597e8d8a7d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. List\02.DoubleList">
-      <UniqueIdentifier>{ff372e2e-8839-49bf-893f-36d5653dda44}</UniqueIdentifier>
-    </Filter>
     <Filter Include="02. Tree\01. LinkBinaryTree">
       <UniqueIdentifier>{f83f1d9c-6147-4213-bd5b-06bf2ab368f5}</UniqueIdentifier>
     </Filter>
@@ -52,6 +49,12 @@
     <Filter Include="04. Graph\01. AdjMatrixGraph">
       <UniqueIdentifier>{7b302321-725f-4f69-872c-453f022fa1e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="04. Graph\02. AdjListGraph">
+      <UniqueIdentifier>{ba70df41-d51a-4b07-b891-307abecf364f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. List\02 .DoubleList">
+      <UniqueIdentifier>{ff372e2e-8839-49bf-893f-36d5653dda44}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Node.cpp">
@@ -67,7 +70,7 @@
       <Filter>01. List\01.SingleList</Filter>
     </ClCompile>
     <ClCompile Include="DblLinkedList.cpp">
-      <Filter>01. List\02.DoubleList</Filter>
+      <Filter>01. List\02 .DoubleList</Filter>
     </ClCompile>
     <ClCompile Include="BinaryNode.cpp">
       <Filter>02. Tree\01. LinkBinaryTree\01. Node</Filter>
@@ -96,6 +99,12 @@
     <ClCompile Include="AdjMatGraph.cpp">
       <Filter>04. Graph\01. AdjMatrixGraph</Filter>
     </ClCompile>
+    <ClCompile Include="GraphNode.cpp">
+      <Filter>04. Graph\02. AdjListGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="AdjListGraph.cpp">
+      <Filter>04. Graph\02. AdjListGraph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -108,7 +117,7 @@
       <Filter>01. List\01.SingleList</Filter>
     </ClInclude>
     <ClInclude Include="DblLinkedList.h">
-      <Filter>01. List\02.DoubleList</Filter>
+      <Filter>01. List\02 .DoubleList</Filter>
     </ClInclude>
     <ClInclude Include="BinaryNode.h">
       <Filter>02. Tree\01. LinkBinaryTree\01. Node</Filter>
@@ -136,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="AdjMatGraph.h">
       <Filter>04. Graph\01. AdjMatrixGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode.h">
+      <Filter>04. Graph\02. AdjListGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="AdjListGraph.h">
+      <Filter>04. Graph\02. AdjListGraph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
